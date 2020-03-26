@@ -1,0 +1,24 @@
+{
+  "name": "sql-auto-fill",
+  "version": "1.0.0",
+  "description": "sql query generator created to populate pg-rest-api",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node index.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Vagus-art/sql-auto-fill.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Vagus-art/sql-auto-fill/issues"
+  },
+  "homepage": "https://github.com/Vagus-art/sql-auto-fill#readme",
+  "dependencies": {
+    "axios": "^0.19.2"
+  }
+}
