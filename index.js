@@ -10,7 +10,7 @@ const generatePhone = () => {
 
 const formatData = (personArray) => {
     return personArray.map(person=>({
-        name: `${person.name} ${person.surname} `,
+        name: person.name,
         phone: generatePhone()
     }));
 }
@@ -23,7 +23,7 @@ const generateQueries = async (jsonData) => {
 }
 
 const getData = async () => {
-    const response = await axios.get('https://uinames.com/api/?region=argentina?amount=400');
+    const response = await axios.get('http://localhost:3000/api/contacts/special/all');
     const formattedResponse = await formatData(response.data);
     console.log(formattedResponse);
     return generateQueries(formattedResponse);
